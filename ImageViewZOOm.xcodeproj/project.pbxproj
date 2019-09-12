@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		41A9ED89232A3FDE000FAA28 /* ImageViewZOOm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41A9ED87232A3FDE000FAA28 /* ImageViewZOOm.xcdatamodeld */; };
 		41A9ED8B232A3FDF000FAA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A9ED8A232A3FDF000FAA28 /* Assets.xcassets */; };
 		41A9ED8E232A3FDF000FAA28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A9ED8C232A3FDF000FAA28 /* LaunchScreen.storyboard */; };
+		41A9ED96232A4D0D000FAA28 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A9ED95232A4D0D000FAA28 /* ImageViewCell.swift */; };
+		9204411CA8D03BA7D74B0F7A /* Pods_ImageViewZOOm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3718E05C44D0C444997BD59C /* Pods_ImageViewZOOm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		107165CB2C6F6D5406A64131 /* Pods-ImageViewZOOm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageViewZOOm.debug.xcconfig"; path = "Target Support Files/Pods-ImageViewZOOm/Pods-ImageViewZOOm.debug.xcconfig"; sourceTree = "<group>"; };
+		3718E05C44D0C444997BD59C /* Pods_ImageViewZOOm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageViewZOOm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A9ED7D232A3FDE000FAA28 /* ImageViewZOOm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageViewZOOm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A9ED80232A3FDE000FAA28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A9ED82232A3FDE000FAA28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		41A9ED8A232A3FDF000FAA28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A9ED8D232A3FDF000FAA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A9ED8F232A3FDF000FAA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A9ED95232A4D0D000FAA28 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		FAE5E9CF4E9E662994C0CB41 /* Pods-ImageViewZOOm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageViewZOOm.release.xcconfig"; path = "Target Support Files/Pods-ImageViewZOOm/Pods-ImageViewZOOm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9204411CA8D03BA7D74B0F7A /* Pods_ImageViewZOOm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				41A9ED7F232A3FDE000FAA28 /* ImageViewZOOm */,
 				41A9ED7E232A3FDE000FAA28 /* Products */,
+				D4F3960730F1A51EE84C03BB /* Pods */,
+				D6B91D33F5F33D88581968FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				41A9ED8C232A3FDF000FAA28 /* LaunchScreen.storyboard */,
 				41A9ED8F232A3FDF000FAA28 /* Info.plist */,
 				41A9ED87232A3FDE000FAA28 /* ImageViewZOOm.xcdatamodeld */,
+				41A9ED95232A4D0D000FAA28 /* ImageViewCell.swift */,
 			);
 			path = ImageViewZOOm;
+			sourceTree = "<group>";
+		};
+		D4F3960730F1A51EE84C03BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				107165CB2C6F6D5406A64131 /* Pods-ImageViewZOOm.debug.xcconfig */,
+				FAE5E9CF4E9E662994C0CB41 /* Pods-ImageViewZOOm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6B91D33F5F33D88581968FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3718E05C44D0C444997BD59C /* Pods_ImageViewZOOm.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A9ED92232A3FDF000FAA28 /* Build configuration list for PBXNativeTarget "ImageViewZOOm" */;
 			buildPhases = (
+				FC8AAA780169314518C76E7C /* [CP] Check Pods Manifest.lock */,
 				41A9ED79232A3FDE000FAA28 /* Sources */,
 				41A9ED7A232A3FDE000FAA28 /* Frameworks */,
 				41A9ED7B232A3FDE000FAA28 /* Resources */,
+				209CC5A26A673972858FC4E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		209CC5A26A673972858FC4E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageViewZOOm/Pods-ImageViewZOOm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageViewZOOm/Pods-ImageViewZOOm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageViewZOOm/Pods-ImageViewZOOm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8AAA780169314518C76E7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageViewZOOm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41A9ED79232A3FDE000FAA28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A9ED96232A4D0D000FAA28 /* ImageViewCell.swift in Sources */,
 				41A9ED89232A3FDE000FAA28 /* ImageViewZOOm.xcdatamodeld in Sources */,
 				41A9ED83232A3FDE000FAA28 /* ViewController.swift in Sources */,
 				41A9ED81232A3FDE000FAA28 /* AppDelegate.swift in Sources */,
@@ -284,6 +356,7 @@
 		};
 		41A9ED93232A3FDF000FAA28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107165CB2C6F6D5406A64131 /* Pods-ImageViewZOOm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +375,7 @@
 		};
 		41A9ED94232A3FDF000FAA28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE5E9CF4E9E662994C0CB41 /* Pods-ImageViewZOOm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
